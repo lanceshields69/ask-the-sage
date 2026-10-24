@@ -17,9 +17,11 @@
   --button-text: var(--stone);
   --border-soft: #D9D6CC;
 
-  --font-en: "Literata", Georgia, "Times New Roman", serif;
+  --font-en: "neue-haas-grotesk-text", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "ivypresto-display", Georgia, serif;
+  --font-headline: "ivypresto-headline", Georgia, serif;
   --font-zh: "Noto Serif TC", "PingFang TC", "Songti TC", serif;
-  --font-logo: "Silkscreen", "Literata", monospace;
+  --font-logo: "neue-haas-grotesk-text", "Helvetica Neue", Arial, sans-serif;
 
   --content-max: 680px;
   --space-section: clamp(64px, 12vw, 128px);
@@ -87,10 +89,18 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: var(--font-en);
-  font-weight: 600;
   line-height: 1.25;
   margin: 0 0 0.6em;
+}
+
+h1, h2 {
+  font-family: var(--font-headline);
+  font-weight: 700;
+}
+
+h3 {
+  font-family: var(--font-en);
+  font-weight: 700;
 }
 
 p {
@@ -149,9 +159,8 @@ a {
   align-items: center;
   gap: 20px;
   font-family: var(--font-logo);
-  font-weight: 400;
+  font-weight: 700;
   font-size: 20px;
-  letter-spacing: 0.04em;
   color: var(--stone);
   margin-bottom: clamp(48px, 14vh, 140px);
 }
@@ -194,6 +203,7 @@ a {
 }
 
 .hero-headline {
+  font-family: var(--font-display);
   font-size: clamp(32px, 6vw, 56px);
   font-weight: 700;
   color: var(--stone);
@@ -260,7 +270,7 @@ html.motion-ok .wordmark.revealed {
   display: inline-block;
   font-family: var(--font-en);
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: none;
   padding: 13px 24px;
   border-radius: 4px;
@@ -404,7 +414,7 @@ html.motion-ok .wordmark.revealed {
 }
 
 .report-card .report-title {
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 12px;
 }
 
@@ -556,7 +566,7 @@ html.motion-ok .wordmark.revealed {
 
 .faq-list summary {
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 17px;
   list-style: none;
 }
