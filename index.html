@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ask the Sage: a pause before your AI acts</title>
+<meta name="description" content="Ask the Sage gives AI a pause before it acts, drawn from the Tao Te Ching. A free skill for Claude.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ask the Sage: a pause before your AI acts">
+<meta property="og:description" content="Ask the Sage gives AI a pause before it acts, drawn from the Tao Te Ching. A free skill for Claude.">
+<!-- TODO: replace with the final 1200x630 social share image -->
+<meta property="og:image" content="og-placeholder.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ask the Sage: a pause before your AI acts">
+<meta name="twitter:description" content="Ask the Sage gives AI a pause before it acts, drawn from the Tao Te Ching. A free skill for Claude.">
+<meta name="twitter:image" content="og-placeholder.png">
+
+<!-- TODO: replace placeholder favicon with the final mark -->
+<link rel="icon" href="favicon.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:wght@400;500;600;700&family=Noto+Serif+TC:wght@400;500&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+<link rel="preload" as="image" href="images/hero5.jpg">
+
+<script>
+  // Runs synchronously so the hero never flashes the animated state
+  // before we know whether motion is allowed.
+  (function () {
+    try {
+      var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!reduce) document.documentElement.classList.add('motion-ok');
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body>
+
+<section class="hero" id="top">
+  <div class="wrap hero-inner">
+    <div class="wordmark"><!-- TODO: swap for the real logo, one line --> Ask the Sage</div>
+
+    <p class="hero-full-sentence">AI can do almost anything for you. It should first ask whether it needs to.</p>
+    <h1 class="hero-headline">Ask first.</h1>
+
+    <div class="hero-sub-group" data-hero-reveal>
+      <p class="hero-subhead">Ask the Sage gives your AI a pause before it acts. It's drawn from the Tao Te Ching, a short book written more than 2,000 years ago about doing less and doing it well.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="downloads/wu-wei.zip" download>Download the skill</a>
+        <a class="btn btn-secondary" href="#see-it-work">See it work</a>
+      </div>
+      <button type="button" class="btn-text hero-replay" id="replay-btn" hidden>Replay</button>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>Why now</h2>
+    <p>AI agents now send our emails, book our time and buy things for us. Many keep working while we sleep. They are built to do more. Nobody built them to ask whether something needs doing at all.</p>
+    <p>Ask the Sage adds that question. Before your AI sends, books or buys, it pauses. Most of the time it goes ahead. Sometimes it suggests a smaller version, or waiting, or letting it go. Every time, it tells you why.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>Why the Tao Te Ching</h2>
+    <p>You don't need to know anything about Taoism. The Tao Te Ching is 81 short chapters, about 5,000 characters in the original Chinese. You can read it in an afternoon and spend a lifetime with it.</p>
+    <p>Its central idea is wu wei: acting without forcing. That's not doing nothing. It's doing what's needed, and no more. It's a useful skill for people, and it turns out to be a useful one for machines.</p>
+
+    <div class="section-photo">
+      <img src="images/wu-wei-portrait.jpg" alt="A double-exposed portrait, teal-toned and softly blurred, of a person looking down in quiet reflection." width="1800" height="1200" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="section" id="see-it-work">
+  <div class="wrap">
+    <h2>See it work</h2>
+    <p class="section-muted">A real example, presented like an agent's pause.</p>
+
+    <div class="panel">
+      <div class="panel-row"><span class="label">Action</span><span>Send a fourth follow-up to Sam</span></div>
+      <div class="panel-row"><span class="label">Verdict</span><span>Wait, until Thursday</span></div>
+
+      <div class="panel-passage">
+        <p class="panel-passage-zh zh">治大國，若烹小鮮</p>
+        <div class="panel-passage-en">
+          <p class="panel-pinyin">zhì dà guó, ruò pēng xiǎo xiān</p>
+          <p class="panel-gloss">"Govern a great state as you would cook a small fish." (Chapter 60)</p>
+        </div>
+      </div>
+
+      <p class="panel-voice">In the sage's voice: Turn the fish too often and it breaks. Leave it, and it cooks.</p>
+    </div>
+
+    <div class="report-card">
+      <p class="report-title">Held back today: 3</p>
+      <p>Waited: follow-up to Sam, until Thursday (Ch. 60)</p>
+      <p>Released: renewal of a second note-taking app (Ch. 44)</p>
+      <p>Simplified: launch email, three paragraphs to one (Ch. 11)</p>
+    </div>
+
+    <p class="counsel-note">You can also ask the sage about a decision. You'll get the usual answer, then the sage's view, and the choice stays yours.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>A way in, not a replacement</h2>
+    <p>Every passage is quoted exactly from the original Chinese text. The plain-language teachings are ours, and always labeled that way. When a chapter has guided you three times, Ask the Sage invites you to read it in full. When you've met all 81, it suggests you read the whole book.</p>
+    <p>The book itself began at a border pass. A gatekeeper asked a departing traveler to write down his wisdom before letting him through. Ask the Sage is a small pass of its own: a moment to stop before going on.</p>
+  </div>
+</section>
+
+<section class="section" id="get-started">
+  <div class="wrap">
+    <h2>Get started</h2>
+
+    <div class="get-started-primary">
+      <h3>Try it in Claude</h3>
+      <p>Download the skill, then upload it in Claude under Customize &gt; Skills. Ask anything, and end with "Ask the sage."</p>
+      <a class="btn btn-primary" href="downloads/wu-wei.zip" download>Download the skill</a>
+    </div>
+
+    <div class="get-started-secondary">
+      <p>Building with AI agents? An MCP server version is open source on GitHub, and a hosted version is coming.</p>
+      <div class="links">
+        <a href="https://github.com/lanceshields69/wu-wei-mcp">View on GitHub</a>
+
+        <!-- TODO: wire this up to a real waitlist service. Currently does nothing but store the email client-side for a visual confirmation. -->
+        <form class="notify-form" id="notify-form">
+          <label class="sr-only" for="notify-email">Email address</label>
+          <input type="email" id="notify-email" name="email" placeholder="you@example.com" required>
+          <button type="submit">Get notified</button>
+        </form>
+      </div>
+      <p class="notify-status" id="notify-status" role="status"></p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="questions">
+  <div class="wrap">
+    <h2>Questions</h2>
+    <div class="faq-list">
+      <details>
+        <summary>Is this religious?</summary>
+        <p>No. The Tao Te Ching is practical philosophy. You don't need to believe anything to use it.</p>
+      </details>
+      <details>
+        <summary>Will it slow my agent down?</summary>
+        <p>It only pauses before actions that change something, like sending, booking or buying. Reading and thinking go straight through.</p>
+      </details>
+      <details>
+        <summary>What gets stored?</summary>
+        <p>Nothing. The skill runs inside your own Claude account and keeps no records outside it.</p>
+      </details>
+      <details>
+        <summary>How accurate are the quotes?</summary>
+        <p>Every Chinese phrase is checked against a public-domain copy of the original text. The English glosses and teachings are written for this project and labeled as interpretation.</p>
+      </details>
+      <details>
+        <summary>What does it cost?</summary>
+        <p>It's free.</p>
+      </details>
+      <details>
+        <summary>Does it work with other AI tools?</summary>
+        <p>The skill is made for Claude. Developers can connect other agents through the open-source MCP server.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>Chinese text from Project Gutenberg, public domain. Glosses, teachings and the sage's voice lines are original to this project.</p>
+    <p>Made by <a href="https://www.lanceshields.design/ai-lab">Lance Shields</a>.</p>
+  </div>
+</footer>
+
+<script src="hero.js" defer></script>
+</body>
+</html>
