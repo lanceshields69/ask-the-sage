@@ -49,9 +49,9 @@
   // timing. The two survivors then slide from wherever they landed in the
   // sentence into the final "Ask first." arrangement.
   var KEEP_INDICES = [9, 10];
-  var BEAT_MS = 1400;
+  var BEAT_MS = 2400;
   var FADE_WINDOW_MS = 2400;
-  var FADE_DURATION_MS = 420;
+  var FADE_DURATION_MS = 550;
   var PRE_SLIDE_PAUSE_MS = 300;
   var SLIDE_DURATION_MS = 650;
 
