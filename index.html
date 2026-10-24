@@ -95,29 +95,53 @@
     <h2>See it work</h2>
     <p class="section-muted">A real example, presented like an agent's pause.</p>
 
-    <div class="panel">
-      <div class="panel-row"><span class="label">Action</span><span>Send a fourth follow-up to Sam</span></div>
-      <div class="panel-row"><span class="label">Verdict</span><span>Wait, until Thursday</span></div>
+    <div class="panel" id="chat-panel">
+      <p class="chat-panel-label">Example conversation</p>
 
-      <div class="panel-passage">
-        <p class="panel-passage-zh zh">治大國，若烹小鮮</p>
-        <div class="panel-passage-en">
-          <p class="panel-pinyin">zhì dà guó, ruò pēng xiǎo xiān</p>
-          <p class="panel-gloss">"Govern a great state as you would cook a small fish." (Chapter 60)</p>
+      <div id="chat-thread">
+        <div class="chat-turn">
+          <p class="chat-turn-label">You</p>
+          <p class="chat-turn-text">I've followed up twice with a recruiter since my final interview. It's been a week with no reply. Should I send a third email today? Ask the sage.</p>
+        </div>
+        <div class="chat-turn">
+          <p class="chat-turn-label">Ask the Sage</p>
+          <div class="chat-thinking" id="chat-thinking" hidden aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="chat-answer" id="chat-answer">
+            <p><strong>The usual answer</strong></p>
+            <p>A third note is reasonable if it's short and gives them something useful, like a competing deadline or a quick update. Two sentences is plenty.</p>
+            <p><strong>The sage's view: differs</strong></p>
+            <p>Verdict: wait until next week</p>
+            <div class="panel-passage">
+              <p class="panel-passage-zh zh">治大國，若烹小鮮</p>
+              <div class="panel-passage-en">
+                <p class="panel-pinyin">zhì dà guó, ruò pēng xiǎo xiān</p>
+                <p class="panel-gloss">"Govern a great state as you would cook a small fish." (Chapter 60)</p>
+              </div>
+            </div>
+            <p>Delicate things fall apart when handled too much. With a team, a deal, or a relationship, constant checking does more harm than leaving it be.</p>
+            <p class="panel-voice">In the sage's voice: Turn the fish too often and it breaks. Leave it, and it cooks.</p>
+            <p><strong>Applied to your situation:</strong> Two notes already say you're interested. A third this soon reads as pressure. Give it a few more days, then send one short note only if something has changed.</p>
+            <p><strong>Where they differ:</strong> the usual answer says send a short note now. The sage says let it rest.</p>
+          </div>
         </div>
       </div>
 
-      <p class="panel-voice">In the sage's voice: Turn the fish too often and it breaks. Leave it, and it cooks.</p>
+      <div class="chat-controls" id="chat-controls" hidden>
+        <button type="button" class="btn-text" id="chat-show-all">Show all</button>
+        <button type="button" class="btn-text" id="chat-replay" hidden>Replay</button>
+      </div>
     </div>
+
+    <p class="section-muted chat-footnote">When your AI acts on your behalf, it pauses there too, and can show you what it held back.</p>
 
     <div class="report-card">
       <p class="report-title">Held back today: 3</p>
-      <p>Waited: follow-up to Sam, until Thursday (Ch. 60)</p>
+      <p>Waited: third email to the recruiter, until next week (Ch. 60)</p>
       <p>Released: renewal of a second note-taking app (Ch. 44)</p>
       <p>Simplified: launch email, three paragraphs to one (Ch. 11)</p>
     </div>
-
-    <p class="counsel-note">You can also ask the sage about a decision. You'll get the usual answer, then the sage's view, and the choice stays yours.</p>
   </div>
 </section>
 

@@ -408,9 +408,81 @@ html.motion-ok .wordmark.revealed {
   margin-bottom: 12px;
 }
 
-.counsel-note {
+.chat-footnote {
   margin-top: 24px;
-  color: var(--text-muted);
+}
+
+.chat-panel-label {
+  color: var(--silt);
+  font-size: 13px;
+  margin: 0 0 24px;
+}
+
+.chat-turn {
+  margin-bottom: 28px;
+}
+
+.chat-turn:last-child {
+  margin-bottom: 0;
+}
+
+.chat-turn-label {
+  color: var(--silt);
+  font-size: 14px;
+  margin: 0 0 6px;
+}
+
+.chat-turn-text {
+  margin: 0;
+}
+
+.chat-answer p {
+  margin: 0 0 14px;
+}
+
+.chat-answer p:last-child {
+  margin-bottom: 0;
+}
+
+.chat-thinking {
+  display: flex;
+  gap: 6px;
+  padding: 6px 0;
+}
+
+.chat-thinking[hidden] {
+  display: none;
+}
+
+.chat-thinking span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--silt);
+  animation: chat-thinking-pulse 1.1s ease-in-out infinite;
+}
+
+.chat-thinking span:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.chat-thinking span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes chat-thinking-pulse {
+  0%, 60%, 100% {
+    opacity: 0.25;
+  }
+  30% {
+    opacity: 1;
+  }
+}
+
+.chat-controls {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
 }
 
 /* ---- Get started ---- */
