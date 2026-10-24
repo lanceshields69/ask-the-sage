@@ -50,6 +50,10 @@
   // timing. The two survivors then slide from wherever they landed in the
   // sentence into the final "Ask first." arrangement.
   var KEEP_INDICES = [9, 10];
+  // Index of the last word of the first sentence ("you."); a forced break
+  // goes right after it, so the second sentence ("It should...") always
+  // starts its own line, matching the same treatment on the subhead.
+  var LINE_BREAK_AFTER_INDEX = 6;
   var BEAT_MS = 2400;
   var FADE_WINDOW_MS = 2400;
   var FADE_DURATION_MS = 550;
@@ -67,6 +71,9 @@
       span.className = "hero-word";
       span.textContent = w + (i < words.length - 1 ? " " : "");
       wrap.appendChild(span);
+      if (i === LINE_BREAK_AFTER_INDEX) {
+        wrap.appendChild(document.createElement("br"));
+      }
     });
     headline.appendChild(wrap);
     return wrap;
