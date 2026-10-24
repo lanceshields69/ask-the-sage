@@ -133,12 +133,21 @@ a {
 }
 
 .wordmark {
+  display: flex;
+  align-items: center;
+  gap: 20px;
   font-family: var(--font-logo);
   font-weight: 400;
   font-size: 20px;
   letter-spacing: 0.04em;
   color: var(--stone);
   margin-bottom: clamp(48px, 14vh, 140px);
+}
+
+.wordmark-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
 }
 
 .hero-full-sentence {
