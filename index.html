@@ -133,8 +133,7 @@
       <div class="links">
         <a href="https://github.com/lanceshields69/wu-wei-mcp">View on GitHub</a>
 
-        <!-- TODO: wire this up to a real waitlist service. Currently does nothing but store the email client-side for a visual confirmation. -->
-        <form class="notify-form" id="notify-form">
+        <form class="notify-form" id="notify-form" action="https://formspree.io/f/xeaaoekg" method="POST">
           <label class="sr-only" for="notify-email">Email address</label>
           <input type="email" id="notify-email" name="email" placeholder="you@example.com" required>
           <button type="submit">Get notified</button>

@@ -1,16 +1,34 @@
 (function () {
   "use strict";
 
-  // --- Notify form: stub only. Stores nothing, sends nothing. ---
+  // --- Notify form: submits to Formspree via fetch, falls back to a normal POST without JS. ---
   var notifyForm = document.getElementById("notify-form");
   if (notifyForm) {
     notifyForm.addEventListener("submit", function (e) {
       e.preventDefault();
       var status = document.getElementById("notify-status");
-      if (status) {
-        status.textContent = "Thanks. There's no waitlist wired up yet, but we kept note of your interest in this session.";
-      }
-      notifyForm.reset();
+      var button = notifyForm.querySelector("button[type=submit]");
+      if (button) button.disabled = true;
+
+      fetch(notifyForm.action, {
+        method: "POST",
+        body: new FormData(notifyForm),
+        headers: { Accept: "application/json" },
+      })
+        .then(function (res) {
+          if (res.ok) {
+            if (status) status.textContent = "Thanks. We'll let you know when the hosted version is ready.";
+            notifyForm.reset();
+          } else {
+            if (status) status.textContent = "Something went wrong. Please try again.";
+          }
+        })
+        .catch(function () {
+          if (status) status.textContent = "Something went wrong. Please try again.";
+        })
+        .finally(function () {
+          if (button) button.disabled = false;
+        });
     });
   }
 
