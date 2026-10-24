@@ -131,7 +131,7 @@ a {
   min-height: 100vh;
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("images/hero5.jpg") center / cover no-repeat;
+    url("/images/hero5.jpg") center / cover no-repeat;
   background-color: var(--ink-green);
   color: var(--stone);
   display: flex;
@@ -221,6 +221,19 @@ html.motion-ok .hero-sub-group.revealed {
   opacity: 1;
   transform: translateY(0);
   transition: opacity 520ms ease, transform 520ms ease;
+}
+
+/* The wordmark stays hidden until the headline settles, since the headline
+   collapsing from several lines to one shifts the vertically-centered hero
+   content; revealing the wordmark at the same time as the rest hides that
+   shift instead of showing it as a jump. */
+html.motion-ok .wordmark {
+  opacity: 0;
+}
+
+html.motion-ok .wordmark.revealed {
+  opacity: 1;
+  transition: opacity 520ms ease;
 }
 
 .hero-subhead {

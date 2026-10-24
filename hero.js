@@ -38,6 +38,7 @@
   var fullSentenceEl = document.querySelector(".hero-full-sentence");
   var headline = document.querySelector(".hero-headline");
   var subGroup = document.querySelector("[data-hero-reveal]");
+  var wordmark = document.querySelector(".wordmark");
   var replayBtn = document.getElementById("replay-btn");
   if (!fullSentenceEl || !headline || !subGroup) return;
 
@@ -124,6 +125,7 @@
       setTimeout(function () {
         headline.classList.add("settled");
         subGroup.classList.add("revealed");
+        if (wordmark) wordmark.classList.add("revealed");
         if (replayBtn) replayBtn.hidden = false;
       }, SLIDE_DURATION_MS + 50);
     }
@@ -149,6 +151,7 @@
       replayBtn.hidden = true;
       subGroup.classList.remove("revealed");
       headline.classList.remove("settled");
+      if (wordmark) wordmark.classList.remove("revealed");
       runSequence();
     });
   }
