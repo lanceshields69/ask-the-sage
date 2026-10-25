@@ -348,6 +348,13 @@ html.motion-ok .wordmark.revealed {
   display: block;
 }
 
+.photo-credit {
+  margin: 8px 0 0;
+  text-align: right;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
 /* ---- See it work ---- */
 
 .panel {
